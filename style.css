@@ -1,0 +1,406 @@
+:root {
+    --text: #E5918A;
+    --background: #FDFBF4;
+    --primary: #C7C2B2;
+    --secondary: #8B846F;
+    --accent: #414B3B;
+
+}
+
+/*
+font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+  */
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--background);
+    border: 2px solid red;
+}
+
+h1 {
+    font-size: 8em;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text);
+    top: 5%;
+    left: 18%;
+    position: absolute;
+}
+
+.header {
+    border: 2px solid green;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar {
+    padding: 30px;
+    margin: 0 5%;
+}
+
+.navBar_link {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.navBar_link a {
+    font-size: 1.5em;
+    color: var(--text);
+}
+
+.navBar_link a:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.banner {
+    margin: 9% 0 9% 5%;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.decoLine {
+    margin: 0 5%;
+    border-left: 2px solid var(--primary);
+    width: 5px;
+    height: 200px;
+}
+
+/**/
+.cardImg {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.cardPresentationImg {
+    height: 800px;
+}
+
+.cardPresentation {
+    padding: 5%;
+    display: flex;
+    border: 2px solid pink;
+}
+
+.cardPresentation_top {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardPresentation_title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+}
+
+.cardPresentation_title h2 {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8em;
+    margin: 0;
+    color: var(--text);
+}
+
+.cardPresentation_content {
+    padding: 10% 5%;
+    font-size: 1.5em;
+    text-align: justify;
+    color: var(--secondary);
+}
+
+.cardPresentation_content p:last-child {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.decoLineBottom {
+    border-bottom: 3px solid var(--primary);
+    height: 5px;
+    padding: 0 30px;
+
+}
+
+/*about me*/
+
+#aboutMe {
+    padding: 5%;
+    border: 2px solid orange;
+}
+
+.decoLineLeft {
+    border-left: 3px solid var(--primary);
+    height: 900px;
+}
+
+.aboutMe_container {
+    display: flex;
+}
+
+.aboutMe_container_top {
+    display: flex;
+    align-items: center;
+}
+
+.aboutMe_title {
+    font-size: 100px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    color: var(--secondary);
+    margin: 0;
+}
+
+
+.aboutMe_content {
+    padding: 5%;
+}
+
+.aboutMe_content h3 {
+    color: var(--text);
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.aboutMe_content p {
+    color: var(--secondary);
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.aboutMe_content p:last-child {
+    color: var(--accent);
+    font-weight: bold;
+
+}
+
+/**/
+
+.formation_container {
+    padding: 5%;
+    border: 2px solid greenyellow;
+    display: flex;
+
+}
+
+.cardFormationImg {
+    object-fit: cover;
+    object-position: center;
+    width: 600px;
+    height: 600px;
+}
+
+.formation_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formation_title h2 {
+    color: var(--secondary);
+    font-size: 100px;
+    margin: 5px;
+}
+
+
+.formation_content {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.cardFormation {
+    padding: 5%;
+}
+
+.cardFormation h4 {
+    color: var(--secondary);
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.cardFormation p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    color: var(--primary);
+}
+
+ul li {
+    list-style-image: url(images/star.png);
+}
+
+.cardFormation_color {
+    background-color: var(--secondary);
+    padding: 5%;
+}
+
+.cardFormation_color h4 {
+    color: var(--background);
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.cardFormation_color p {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary);
+    margin: 0;
+}
+
+/*Works*/
+
+.works_container {
+    padding: 5%;
+    border: 2px solid greenyellow;
+    display: flex;
+    align-items: center;
+}
+
+.imgCarousel {
+    object-fit: cover;
+    object-position: center;
+    width: 900px;
+    height: 600px;
+    border: 3px solid var(--accent);
+    margin: 5% 0 0 5%;
+}
+
+.arrow {
+    position: absolute;
+    border: 2px solid red;
+    left: 45%;
+    cursor: pointer;
+}
+
+.test {
+    position: absolute;
+    right: 50%;
+}
+
+/** Contact **/
+
+.contact_container {
+    padding: 5%;
+}
+
+.citation {
+    width: 300px;
+    height: 286px;
+    border: 2px solid var(--primary);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.citation h3 {
+    font-size: 24px;
+}
+
+.cardImgCitation {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 2% 5% 0;
+}
+
+.imgCardContact {
+    display: flex;
+}
+
+
+.contact_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_content-card{
+    padding: 5%;
+}
+.contact_content h2 {
+    color: var(--text);
+    font-size: 50px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+.texteContact{
+    color: var(--secondary);
+    margin: 0;
+    font-size: 20px;
+
+ }
+
+/*infos*/
+
+.contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+    justify-content: center;
+}
+
+
+.contactInfoCase {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.contactInfoCase .fa-solid {
+    color: var(--secondary);
+}
+
+.contactInfoCase2 {
+    color: var(--secondary);
+}
+
+.contactInfoCase2 a {
+    color: var(--secondary);
+}
+
+.contactInfoCase2 h4 {
+    margin: 0;
+}
+
+.contactInfoCase2 p {
+    margin: 0;
+}
+
+.decorativeLine{
+    border: 1px solid var(--primary);
+    width: 100%;
+    margin: 5%;
+}
