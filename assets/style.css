@@ -17,11 +17,13 @@ a {
     text-decoration: none;
 }
 
+html{
+    background-color: var(--primary);
+}
 body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--background);
-    border: 2px solid red;
 }
 
 h1 {
@@ -35,9 +37,7 @@ h1 {
     position: absolute;
 }
 
-.header {
-    border: 2px solid green;
-}
+
 
 .headerContainer {
     display: flex;
@@ -100,7 +100,7 @@ h1 {
 .cardPresentation {
     padding: 5%;
     display: flex;
-    border: 2px solid pink;
+    border-top: 2px solid var(--primary);
 }
 
 .cardPresentation_top {
@@ -146,7 +146,7 @@ h1 {
 
 #aboutMe {
     padding: 5%;
-    border: 2px solid orange;
+    border-top: 2px solid var(--primary);
 }
 
 .decoLineLeft {
@@ -202,7 +202,7 @@ h1 {
 
 .formation_container {
     padding: 5%;
-    border: 2px solid greenyellow;
+    border-top: 2px solid var(--primary);
     display: flex;
 
 }
@@ -275,10 +275,9 @@ ul li {
 /*Works*/
 
 .works_container {
-    padding: 5%;
-    border: 2px solid greenyellow;
+    padding-top: 5%;
+    border-top: 2px solid var(--primary);
     display: flex;
-    align-items: center;
 }
 
 .imgCarousel {
@@ -286,14 +285,19 @@ ul li {
     object-position: center;
     width: 900px;
     height: 600px;
-    border: 3px solid var(--accent);
-    margin: 5% 0 0 5%;
+    filter: drop-shadow(5px 5px 6px grey);
+
 }
 
+.decoBande{
+    width: 30%;
+    height: 900px;
+    background-color: var(--primary);
+}
 .arrow {
     position: absolute;
     border: 2px solid red;
-    left: 45%;
+    right:20%;
     cursor: pointer;
 }
 
@@ -302,10 +306,34 @@ ul li {
     right: 50%;
 }
 
+
+.works_content{
+    width: 50%;
+    height: auto;
+    padding: 2%;
+    border-left: 100px solid var(--secondary);
+}
+.works_content h2{
+    color: var(--accent);
+    color: var(--text);
+    font-size: 50px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+.worksInfos{
+    display: flex;
+    justify-content: space-between;
+    color: var(--secondary);
+}
+
 /** Contact **/
 
 .contact_container {
     padding: 5%;
+    border-top: 2px solid var(--primary);
 }
 
 .citation {
@@ -316,10 +344,13 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .citation h3 {
-    font-size: 24px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 1em;
 }
 
 .cardImgCitation {
@@ -403,4 +434,7 @@ ul li {
     border: 1px solid var(--primary);
     width: 100%;
     margin: 5%;
+}
+.test2{
+    padding: 5% 10% 5%;
 }

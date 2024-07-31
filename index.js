@@ -1,10 +1,10 @@
 const carouselPics = [
     {
-      image: "/images/ohmyFood.PNG",
+      image: "/assets/images/ohmyFood.PNG",
       title: "Projet4-Ohmyfood",
     },
     {
-      image: "/images/ohmyFood2.PNG",
+      image: "/assets/images/ohmyFood2.PNG",
       title: "Projet4-Ohmyfood",
     },
   
